@@ -1,0 +1,54 @@
+.nav li {
+    display:inline;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 145px;
+}
+
+.nav a{
+    color: #5a5a5a;
+}
+
+.jumbotron {
+    height: 600px;
+    background-color: #6600CC;
+    background-image: url("resources/PinkhamEagles.jpeg");
+    background-repeat: no-repeat;
+    background-attachment:relative;
+    background-position:center;
+}
+
+.jumbotron .container {
+    position: relative;
+}
+
+.jumbotron h1 {
+    color: #FFFF00;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    color: #FFFF00;
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+.jumbotron logo {
+    color: #FFFF00;
+    font-size: 36px;
+}
+
+.Parents-Students {
+    background-color: #f7f7f7;
+}
+
+.Parents-Students h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Parents-Students a {
+    color: #00b0ff;
+}
