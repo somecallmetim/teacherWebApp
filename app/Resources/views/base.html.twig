@@ -5,7 +5,8 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
             {% stylesheets
-                'bundles/home/css/styles.css'
+                'bundles/home/css/defaultStyle.css'
+                'bundles/home/css/frontPage.css'
                 filter='cssrewrite'
             %}
 
@@ -15,8 +16,25 @@
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
+    <header>
+        {% block header %}
+            <div class="container">
+            <div id="logo"></div>
+            <nav><ul><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></nav>
+            <a class="button floatright" href="#">Button</a>
+            </div>
+        {% endblock %}
+    </header>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
+    <footer>
+        {% block footer %}
+            <div class="container">
+            <h4>Built by Creative Solutions</h4>
+            </div>
+        {% endblock %}
+    </footer>
 </html>

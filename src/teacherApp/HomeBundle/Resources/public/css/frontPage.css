@@ -1,0 +1,104 @@
+section.hero {
+    width: 100%; height: 400px;background: url("../images/images1.jpeg");background-size: 100% 100%;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+section.hero h1 {
+    font-size: 30px;
+    margin-bottom: -10px;
+    color: #162656;
+}
+
+section.hero p {
+    margin-bottom: 60px;
+    color: #162656;
+}
+
+section.hero .button {
+    width: 225px;height: 40px;padding-top: 25px;font-size: 20px;
+}
+
+.heroimage {
+    width: 480px; height: 380px; background-color: rgb(150,150,150);
+    float: left; margin: 10px 0 0 20px;
+}
+
+.herocontent {
+    width: 400px;
+    float: left;
+    margin-left: 20px;
+    padding-top: 40px;
+
+}
+
+.container {
+    width: 940px;height: 100%;
+    margin: 0 auto;
+}
+
+section.features {
+    width: 940px;height: 350px;background-color: #AA9739;;
+    margin: 0 auto 5px;
+    padding: 5px 0;
+}
+
+section.features h2 {
+    font-size: 25px; text-align: center;margin-bottom: -20px;
+    color: #403075;
+}
+
+section.features h4 {
+    font-weight: normal;text-align: center; margin-bottom: 60px;
+    color: #403075;
+}
+
+section.features aside{
+    width: 286px;
+    height: 200px;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    background-color: #261758;
+    color: #615192;
+}
+
+section.features aside img {
+    width: 100%;height: 150px;background-color: #261758);
+}
+
+section.organize {
+    width: 100%;height: 260px;background-color: #403075;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    color: #AA9739;
+}
+section.organize img, section.share img {
+    width: 440px;height: 225px;float: left;margin-left: 20px;margin-top: 20px;background-color: rgb(200,200,200);
+}
+
+.organizecontent, .sharecontent {
+    float: left;margin-left: 20px;width: 440px;
+}
+
+section.share {
+    width: 940px;height: 260px;background-color: #AA9739;
+    margin: 0 auto 5px;
+    padding: 5px 0;
+    color: #403075;
+}
+
+section.get{
+    width: 100%;height: 100px;background-color: #403075;
+    padding: 5px 0;
+
+}
+
+section.get h2 {
+    font-size: 30px;float: left;color: #AA9739;
+    margin-left: 60px;margin-top: 30px;
+}
+
+section.get .button {
+    margin-right: 60px; margin-top: 25px;
+}

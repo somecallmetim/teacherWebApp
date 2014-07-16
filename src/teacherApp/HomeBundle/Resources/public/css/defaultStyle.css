@@ -1,0 +1,67 @@
+/*Utility*/
+
+.floatleft {float: left; }
+.floatright {float: right; }
+
+body {margin: 0; font-family: Verdana, sans-serif; background-color: #061339 }
+
+/*Structure*/
+
+header {
+    width: 100%; height: 60px;background-color: #403075;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+    #logo {
+        width: 125px; height: 60px; background: url("../images/images2.jpeg");background-size: 100% 100%;
+        float: left;
+    }
+
+    nav {float: left; margin-left: 340px;}
+    nav li {display: inline; margin-right: 20px; font-weight: bold; font-size: 18px;}
+    nav li a {
+        color: #AA9739;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        color: #061339;
+        text-decoration: underline;
+    }
+
+    .button { width: 150px; height: 30px; background: linear-gradient(#615192, #261758);
+        text-align: center;
+        padding: 15px 5px 5px;
+        margin: 5px 5px 0 0;
+        border: 1px solid rgb(150,150,150);
+        border-radius: 25px;
+        cursor: pointer;
+        color: #AA9739;
+        text-decoration: none;
+
+        background: -webkit-gradient(linear, left top, left bottom, from(#615192), to(#261758));
+        background: -moz-linear-gradient(top,  #615192,  #261758);
+    }
+
+    .button:hover {
+        background: linear-gradient(#261758, #615192);
+        color: #061339;
+        text-decoration: underline;
+        background: -webkit-gradient(linear, left top, left bottom, from(#261758), to(#615192));
+        background: -moz-linear-gradient(top,  #261758, #615192);
+    }
+
+footer {
+    width: 100%; height: 60px;background-color: #061339;
+    padding: 5px 0;text-align: center;
+}
+
+footer .container {
+    padding-top: 5px;
+    background-color: #AA9739;
+}
+footer h4 {
+    font-weight: normal;
+    color: #261758;
+}

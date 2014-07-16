@@ -1,14 +1,6 @@
-{% extends '::base.html.twig' %}
+{% extends '@Home/layout.html.twig' %}
 
 {% block body %}
-<header>
-    <div class="container">
-        <div id="logo"></div>
-        <nav><ul><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></nav>
-        <a class="button floatright" href="#">Button</a>
-    </div>
-</header>
-
 <section class="hero">
     <div class="container">
         <img src="{{ asset('bundles/home/images/images.jpeg') }}" class="heroimage"/>
@@ -66,12 +58,5 @@
         <a class="button floatright" href="#">Button</a>
     </div>
 </section>
-
-
-<footer>
-    <div class="container">
-        <h4>Built by Creative Solutions</h4>
-    </div>
-</footer>
 
 {% endblock %}
