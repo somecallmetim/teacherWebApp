@@ -1,67 +1,77 @@
-<!DOCTYPE html>
-<html>
+{% extends '::base.html.twig' %}
 
-<head>
-    <title>Go Eagles!!!</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" href="main.css">
-</head>
-
-<body>
-
-<div class="nav">
+{% block body %}
+<header>
     <div class="container">
-        <ul>
-            <li><a href="teachUtil/login.html">Login</a></li>
-            <li><a href="teachUtil/createAcct.html">New Account</a></li>
-            <li><a href="genInfo/roomList.html">List of Classrooms</a></li>
-            <li><a href="genInfo/studList.html">List of Students</a></li>
-        </ul>
+        <div id="logo"></div>
+        <nav><ul><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li></ul></nav>
+        <a class="button floatright" href="#">Button</a>
     </div>
-</div>
+</header>
 
-<div class="jumbotron">
+<section class="hero">
     <div class="container">
-        <h1>
-            Welcome Back Teachers!!!
-        </h1>
-        <p>Please Login to Meet Your New Students and Organize Your Classrooms</p>
-        <logo>Go Eagles!!!</logo>
+        <img src="{{ asset('bundles/home/images/images.jpeg') }}" class="heroimage"/>
+        <div class="herocontent">
+            <h1>Main Headline</h1>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <a class="button floatleft" href="#">Button</a>
+        </div>
+
     </div>
-</div>
+</section>
 
-<div class="Parents-Students">
+<section class="features">
+    <h2>Features Section Header</h2>
+    <h4>Features Section Subheader</h4>
+    <aside>
+        <img src="{{ asset('bundles/home/images/crazy-hair-day.jpg') }}"/>
+        <h3>Feature Headline</h3>
+    </aside>
+    <aside>
+        <img src="{{ asset('bundles/home/images/soar-to-800.jpg') }}">
+        <h3>Feature Headline</h3>
+    </aside>
+    <aside>
+        <img src="{{ asset('bundles/home/images/scicon.jpg') }}"/>
+        <h3>Feature Headline</h3>
+    </aside>
+</section>
+
+<section class="organize">
     <div class="container">
-        <div class="row">
-
-            <div class="col-md-4">
-                <h3>
-                    Students
-                </h3>
-                <p>Meet your teachers!</p>
-                <p><a href="genInfo/teachStudAss.html">Find a list of Teacher-Student assignments here</a></p>
-            </div>
-
-            <div class="col-md-4">
-                <h3>
-                    Parents
-                </h3>
-                <p>Explore your childs classroom!</p>
-                <p><a href="genInfo/teachRoomAss.html">See the room your child's teacher as it's set up</a></p>
-            </div>
-
-            <div class="col-md-4">
-                <h3>
-                    Have Questions?
-                </h3>
-                <p>We are here to serve your every need!</p>
-                <p><a href="genInfo/faqcontact.html">Check out our FAQ and contact info here</a></p>
-
-            </div>
+        <img src="http://maps.googleapis.com/maps/api/staticmap?center=2431+E+Westcott+Ave,Visalia,CA+93292&zoom=16&size=440x225&markers=color:red%7Ccolor:red%7C2431+E+Westcott+Ave,Visalia,CA+93292">
+        <div class="organizecontent">
+            <h2>Organize Headline</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+                sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
         </div>
     </div>
-</div>
+</section>
 
-</body>
+<section class="share">
+    <div class="sharecontent">
+        <h2>Share Headline</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+            sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </div>
+    <img src="http://maps.googleapis.com/maps/api/staticmap?center=5000+W+Cypress+Ave,Visalia,CA+93277&zoom=16&size=440x225&markers=color:red%7Ccolor:red%7C5000+W+Cypress+Ave,Visalia,CA+93277">
+</section>
 
-</html>
+<section class="get">
+    <div class="container">
+        <h2>Call To Action</h2>
+        <a class="button floatright" href="#">Button</a>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <h4>Built by Creative Solutions</h4>
+    </div>
+</footer>
+
+{% endblock %}
